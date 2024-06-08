@@ -9,7 +9,7 @@ abstract: 'Our product is a handheld 2-player recreation of the classic Pong gam
 <br/><br/>
 Our source code can be found 
 <!-- replace this link -->
-<a href="https://github.com/ucd-eec172/project-website-example">
+<a href="https://github.com/anusheelnand/pong172.github.io/">
   here</a>.
 
 <h2>Video Demo</h2>
