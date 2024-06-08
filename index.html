@@ -108,7 +108,7 @@ BOM</a></li>
     </div>
   </div>
      <div style="display:inline-block;vertical-align:top;flex:1 0 300px;">
-    Figure 3 provides a high-level diagram of the game’s updating logic. The game program first increments its timer. The game program then updates the positions of the ball and paddles. The ball’s position is updated based on if it meets certain conditions such as being within the OLED display’s boundaries. Updating the paddles’ positions involves the program reading in data polled from the main CC3200’s accelerometer and accelerometer data transmitted from the Player 2 controller via UART. After the positions of the ball and paddles are updated, they are then redrawn on the OLED display. The game program then checks if its timer has reached 950. If it has, the game program will then update the OLED display to show the game over screen. Otherwise, the game program continues running and loops back to the increment timer step.
+    Figure 3 provides a high-level diagram of the game’s updating logic in the play game state. The game program first increments its timer. The game program then updates the positions of the ball and paddles. The ball’s position is updated based on if it meets certain conditions such as being within the OLED display’s boundaries. Updating the paddles’ positions involves the program reading in data polled from the main CC3200’s accelerometer and accelerometer data transmitted from the Player 2 controller via UART. After the positions of the ball and paddles are updated, they are then redrawn on the OLED display. The game program then checks if its timer has reached 950. If it has, the game program will then update the OLED display to show the game over screen. Otherwise, the game program continues running and loops back to the increment timer step.
   </div>
 </div>
 
@@ -314,7 +314,7 @@ variable to define the value of the decimal format specifier. sendScore
 is a global variable updated with the highest player score value when
 the game reaches the “game over” state. This mechanism thus creates a
 cycle of http_post functions updating the device shadow when the game
-ends and http_post functions retrieving device shadow information when
+ends and http_get functions retrieving device shadow information when
 the game first begins. The two players can try again for the high score
 by pressing the reset button, SW3. The reset button transitions the game
 state back to the initial state, where http_get is used to pull the
