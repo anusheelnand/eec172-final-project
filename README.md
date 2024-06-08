@@ -1,21 +1,14 @@
-# EEC 172 Project Website Template Repo
+# EEC 172 A03 Pong Final Project
 
-> The contents of this example project website are being published with the
-> permission of its authors Kushagra Tiwari and Shengmin Liu.
-
-This is an example final project website for UCD EEC172 per the project
-instructions [posted here](https://ucd-eec172.github.io/labs/project.html).
-
-Disclaimer: Do note that some requirements in the project instructions may be 
-missing from this example, as project instructions may change between course 
-offerings.
-
-It is live [here](https://ucd-eec172.github.io/project-website-example/).
-
+This application recreates the traditional Pong game.
+It uses the accelerometers of two CC3200s to move 
+the paddles. Another CC3200's accelerometer is interfaced
+over UART using the "controller" project.
+A global high score is tracked using AWS IoT services.
 
 ## Usage and Publishing
 
-This demo website uses GNU Make and Pandoc to facilitate the conversion of 
+This website uses GNU Make and Pandoc to facilitate the conversion of 
 author-written markdown pages into a formatted and styled static HTML page.
 It is meant for deployment on GitHub Pages, but can be deployed anywhere
 that can host static pages.
